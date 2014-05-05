@@ -23,6 +23,14 @@
 \author{\speaker{Pritchard}\thanks{A footnote may follow.}, Chang, Furlanetto, Choudhury, Zaroubi, Santos, Chen, Weller, Abdalla, Mesinger, Metcalf on behalf of the Cosmology-SWG and EoR/CD-SWG\\
         Imperial College London\\
         E-mail: \email{j.pritchard@imperial.ac.uk}}
+        
+\author{Robert Benton Metcalf\\
+        Dipartimento di Fisica e Astronomia, Universit\'{a} di Bologna, viale B. Pichat 6/2 , 40127, Bologna, Italy\\
+        E-mail: \email{robertbenton.metcalf@unibo.it}}
+
+\author{Alkistis Pourtsidou\\
+        Dipartimento di Fisica e Astronomia, Universit\'{a} di Bologna, viale B. Pichat 6/2 , 40127, Bologna, Italy\\
+        E-mail: \email{alkistis.pourtsidou@unibo.it}}
 
 %\author{Another Author\\
 %        Affiliation\\
@@ -141,9 +149,9 @@ Array & $N_a$ & $A_{\rm tot}(10^3\,{\rm m^2})$ & $B$ (MHz) & $t_{\rm int}$ (hr)&
 MWA & 112 & 1.6  & 8 & 1000 & 4 & 0.75\\
 LOFAR Core & 48 & 38.6  & 8 & 1000 & 100 & 1.5\\
 HERA & 331 & 50.0  & 8 & 1000 & 14.3 & 0.3\\
-SKA0 & 650$\times$0.5 & 224$\times$0.5  & 8 & 1000 & 35 & 1\\
-SKA1 & 650 & 224  & 8 & 1000 & 35 & 1\\
-SKA2 & 650$\times$4 & 224$\times$4 & 8 & 1000 & 35 & 1\\
+SKA0 & 850$\times$0.5 & 224$\times$0.5  & 8 & 1000 & 35 & 2\\
+SKA1 & 850 & 224  & 8 & 1000 & 35 & 1\\
+SKA2 & 850$\times$4 & 224$\times$4 & 8 & 1000 & 35 & 2\\
 \hline
 \hline
 \end{tabular}
@@ -209,6 +217,8 @@ SDSS& 0.456 & 0.083 & 0.117 & 1.21 & 0.503 & $\infty$ & \ldots & \ldots   \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Constraining new physics from heating}
 
+Dark stars?
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Fundamental physics from modifications to the source population}
@@ -221,12 +231,57 @@ SDSS& 0.456 & 0.083 & 0.117 & 1.21 & 0.503 & $\infty$ & \ldots & \ldots   \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Cosmic shear and the EoR}
 
-Ben Metcalf to prepare a summary updated for SKA parameters.
+It is possible that the EoR signal could be used to measure weak gravitational lensing.
+In \cite{Zahn:2005ap} and \cite{Metcalf:2009}  it was shown that if the EoR is at redshift 
+$z \sim 8$ or later, a large radio telescope such as the SKA could measure the lensing convergence power spectrum.  However a very large $f_{\rm sky}$ and a very compact low frequency array was assumed by those authors.  Here the calculation is repeated with parameters that are more consistent with current SKA plans.  The current plans for a 25 square degree survey with SKA\_Low will preclude measuring cosmological parameters through their effects on the weak lensing power-spectrum because of large sample variance.  (This is not true of the SKA\_Mid at lower redshift where the survey area will be much larger. See section *** for more details.)  It still might be possible to map the lensing convergence within the 25 square degree EoR survey area.  This would allow us to actually ``see'' the distribution of dark matter in a typical region of the sky, something that is only possible with galaxy lensing around very atypical, large galaxy clusters.
+
+The previously mentioned authors extended the
+Fourier-space quadratic estimator technique, which was first developed in 
+\cite{Hu:2001tn} for CMB lensing  observations to three dimensional
+observables, i.e. the $21$ cm intensity field $I(\theta,z)$.  
+The  convergence
+estimator and the corresponding lensing reconstruction noise are
+calculated assuming that the temperature (brightness) distribution is
+Gaussian. This will not be strictly true during the EoR, but serves as a reasonable approximation for these purposes. Note that the lensing reconstructions noise contains the thermal noise of the telescope which is calculated using the formula
+\begin{equation}
+C^{\rm N}_\ell = \frac{(2\pi)^3 T^2_{\rm sys}}{\Delta \nu t_{\rm obs} f^2_{\rm cover} \ell_{\rm max}(\nu)^2} \, ,
+\end{equation} where the system temperature $T_{\rm sys}$ at high redshifts
+ is dominated by galactic synchrotron radiation, $\Delta \nu$ is the chosen frequency window, $t_{\rm obs}$ the total observation time, $D_{\rm tel}$ the diameter (maximum baseline) of the core array and $\ell_{\rm max}(\lambda)=2\pi D_{\rm tel}/\lambda$ is the highest multipole that can be measured by the array at frequency $\nu$ (wavelength $\lambda$). $f_{\rm cover}$ is the total collecting area of the core array $A_{\rm coll}$ divided by $\pi(D_{\rm tel}/2)^2$. For SKA\_Low we can consider a $1,000~{\rm hr}$ observation time and we choose $\Delta \nu = 10 \, {\rm MHz}$, but with multiple bands that can be stacked to reduce the noise. 
+ 
+We assuming the SKA1 Baseline Design \cite{Dewdney:2013} parameters of $A_{\rm coll} \simeq 0.4  \, {\rm km}^2$ with maximum baseline $D_{\rm tel}=6 \, {\rm km}$ and a more compact configuration of  $A_{\rm coll} = 0.75 \, {\rm km}^2$, $D_{\rm tel}=2 \, {\rm km}$. 
+The estimated lensing noise is shown in Figure~\ref{fig:CLNL} along with the estimated signal.  
+Here $C_L$ is the displacement field power spectrum and $N_L$ the lensing reconstruction noise assuming a reionization fraction $f_{\rm HI}=1$ at the source redshift $z_s=8$.
+\begin{figure}[h]
+\centerline{
+%\includegraphics[scale=0.45]{CL.eps}
+%\includegraphics[scale=0.45]{CLv2.eps}
+\includegraphics[scale=0.45]{figures/tomographic_SKA_kappaPS.pdf}
+}
+\caption{The lensing displacement field power spectrum, $C_L$, for sources at $z=8$ is shown as a solid black line and lensing reconstruction noise $N_L$ as dashed lines.  The black dashed curve is for the Baseline Design with 20 5~MHz frequency bins around $z=8$ spanning the redshift range $z=6-12$.   The blue line is for the more compact array ($D_{\rm tel}=2 \, {\rm km}$) and the same frequency bins.  The red line is the same as the blue but with 10 5~MHz frequency bins instead of 20, spanning the redshift range $z = 7-10$.  The vertical line is approximately the lowest $L$ accessible with a 5-by-5 degree field.  Where the noise curves are below $C_L$ typical fluctuations in the lensing deflection should be recoverable in a map. }
+\label{fig:CLNL}
+\end{figure}
+
+These results show that it might be possible to map the lensing signal over a range of angular scales.  This measurement would greatly benefit from a more compact array and/or the large collecting area that will come with Phase 2.  The weak lensing power spectrum can be better measured for redshifts after reionization using SKA\-Mid and the same 21 cm intensity mapping technique discussed, but over a much larger area of sky \cite{PourtsidouMetcalf:2014}.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Separating ``gastrophysics" and cosmology}
 \label{sec:separation}
+
+The key challenge for extracting fundamental physics from the 21cm signal will be separating the effects of cosmology from ``gastrophysics". A number of avenues have been studied in the literature, which broadly separate into (1) avoidance and (2) modelling. In the absence of a clearly defined window where $T_S\gg T_{\rm CMB}$ and $x_H=1$ it might still be possible to avoid astrophysics via the angular dependence of the power spectrum induced by redshift space distortions. Focussing on the $P_{\mu^4}\approx P_\delta$ part could lead to clean cosmological measurements. Obtaining precision cosmology this way is hard and the literature suggests little improvement over Planck is possible \cite{2006ApJ...653..815M,2008PhRvD..78b3529M}. Figure \ref{fig:musensitivity} shows predicted errors bars for SKA1 on the $P_{\mu^2}$ and $P_{\mu^4}$ parts of the power spectrum. A detection is possible with reasonable sensitivity.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[scale=0.35]{figures/musensitivityPlot_z8.eps}
+\caption{Sensitivity plots on $P_{\mu^2}$ and $P_{\mu^4}$ for HERA (red dashed curve), SKA0 (red), SKA1 (blue), and SKA2 (green). Dotted curve shows the predicted 21cm signal from the density field alone assuming $x_H=1$ and $T_S\gg T_{\rm CMB}$. Vertical black dashed line indicates the smallest wavenumber probed in the frequency direction $k=2\pi/y$, which may limit foreground removal.  {\em Left panel:} $z=8$ {\em Right panel:} $z=20$.}
+\label{fig:musensitivity}
+\end{center}
+\end{figure}
+
+Information in $P_{\mu^2}$ is likely to help with modelling of the astrophysics. 
+
+Compared with the CMB our theoretical understanding of the 21cm signal during reionization is poor. Predictions for the 21cm power spectrum do not exist at the same level of precision as the cosmology. Nonetheless, we expect the contribution of astrophysics to be relatively broad band and determined by extra power about a characteristic scale, eg the bubble size during reionization.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -235,6 +290,8 @@ Ben Metcalf to prepare a summary updated for SKA parameters.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Miscellaneous?}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
