@@ -159,7 +159,7 @@ SKA2 & 850$\times$4 & 224$\times$4 & 8 & 1000 & 35 & 2\\
 \label{tab:telescopes}
 \end{table}%
 
-We first illustrate the sensitivity of different iterations of SKA in Figure \ref{fig:sensitivity}, where we take the parameters in Table \ref{tab:telescopes} for SKA0 - with 50\% of the SKA1 baseline collecting area, SKA1, and SKA2 - with x4 the collecting area of SKA1. For each of these we assume a filled core of radius $R_{\max}$ and ignore all antennae outside this distance. 
+We first illustrate the sensitivity of different iterations of SKA in Figure \ref{fig:sensitivity}, where we take the parameters in Table \ref{tab:telescopes} for SKA0 - with 50\% of the SKA1 baseline collecting area, SKA1, and SKA2 - with x4 the collecting area of SKA1. For each of these we assume a filled core followed by $r^{-2}$ distribution out to a maximum radius $R_{\max}$. HERA is assumed to have a uniform antennae distribution.
 
 {\bf SKA1 has 911 stations total with 899 in the core and 650 stations within a radius of 1km accounting for ~75\% of the total number of stations and collecting area. Physical station size is 35m. Stations have 289 antennae with antennae area $A_e=\lambda^2/3$ giving $3.2m^2$ at 110MHz. At lower frequencies the array is densely packed and has constant collecting area, at higher frequencies the array becomes sparse.}
 
@@ -172,7 +172,7 @@ We first illustrate the sensitivity of different iterations of SKA in Figure \re
 \end{center}
 \end{figure}
 
-Figure \ref{fig:sensitivity} illustrates a few key points governing parameter constraints. The large station sizes remove sensitivity to the largest physical scales (smallest $k$ modes). By $z=20$ the amplitude of the 21 cm signal is too small to be detected by SKA1 {\em if we assume $T_S\gg T_\gamma$}. Detection of the 21cm signal at $z\gtrsim20$ with SKA1 is dependent upon a strong 21cm absorption signal that boosts the amplitude of the 21cm power spectrum. Unfortunately, it seems likely that during the absorption regime the details and spatial variation of the spin temperature will matter and complicated getting at cosmology.
+Figure \ref{fig:sensitivity} illustrates a few key points governing parameter constraints. Here we have eliminated modes whose wavelength exceeds the instrument bandwidth removing sensitivity to the largest physical scales (smallest $k$ modes). At $z=8$, SKA0 is directly comparable in sensitivity to the proposed HERA experiment \cite{2014ApJ...782...66P}, which is more centrally concentrated to compensate for its small number of stations. By $z=20$ the amplitude of the 21 cm signal is too small to be detected by SKA1 {\em if we assume $T_S\gg T_\gamma$}. Detection of the 21cm signal at $z\gtrsim20$ with SKA1 is dependent upon a strong 21cm absorption signal that boosts the amplitude of the 21cm power spectrum. Unfortunately, it seems likely that during the absorption regime the details and spatial variation of the spin temperature will matter and complicated getting at cosmology.
 
 {\bf concept of effective volume and how SKA compares to various galaxy surveys}
 
@@ -269,7 +269,7 @@ These results show that it might be possible to map the lensing signal over a ra
 \section{Separating ``gastrophysics" and cosmology}
 \label{sec:separation}
 
-The key challenge for extracting fundamental physics from the 21cm signal will be separating the effects of cosmology from ``gastrophysics". A number of avenues have been studied in the literature, which broadly separate into (1) avoidance and (2) modelling. In the absence of a clearly defined window where $T_S\gg T_{\rm CMB}$ and $x_H=1$ it might still be possible to avoid astrophysics via the angular dependence of the power spectrum induced by redshift space distortions. Focussing on the $P_{\mu^4}\approx P_\delta$ part could lead to clean cosmological measurements. Obtaining precision cosmology this way is hard and the literature suggests little improvement over Planck is possible \cite{2006ApJ...653..815M,2008PhRvD..78b3529M}. Figure \ref{fig:musensitivity} shows predicted errors bars for SKA1 on the $P_{\mu^2}$ and $P_{\mu^4}$ parts of the power spectrum. A detection is possible with reasonable sensitivity.
+The key challenge for extracting fundamental physics from the 21cm signal will be separating the effects of cosmology from ``gastrophysics". A number of avenues have been studied in the literature, which broadly separate into (1) avoidance and (2) modelling. In the absence of a clearly defined window where $T_S\gg T_{\rm CMB}$ and $x_H=1$ it might still be possible to avoid astrophysics via the angular dependence of the power spectrum induced by redshift space distortions. Focussing on the $P_{\mu^4}\approx P_\delta$ part could lead to clean cosmological measurements. Obtaining precision cosmology this way is hard and the literature suggests little improvement over Planck is possible \cite{2006ApJ...653..815M,2008PhRvD..78b3529M}. Figure \ref{fig:musensitivity} shows predicted errors bars for SKA1 on the $P_{\mu^2}$ and $P_{\mu^4}$ parts of the power spectrum. A detection is possible with reasonable sensitivity at wavenumbers $k=0.1-1{\rm\,Mpc^{-1}}$.
 
 \begin{figure}[htbp]
 \begin{center}
