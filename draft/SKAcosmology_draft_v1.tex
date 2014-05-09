@@ -20,7 +20,7 @@
 
 \ShortTitle{EoR/CD Cosmology}
 
-\author{\speaker{Pritchard}\thanks{A footnote may follow.}, Chang, Furlanetto, Choudhury, Zaroubi, Santos, Chen, Weller, Abdalla, Mesinger, Metcalf on behalf of the Cosmology-SWG and EoR/CD-SWG\\
+\author{\speaker{Pritchard}\thanks{A footnote may follow.}, Ichiki, Mesinger, Metcalf, Santos, Chang, Furlanetto, Choudhury, Zaroubi, Chen, Weller, Abdalla,  on behalf of the Cosmology-SWG and EoR/CD-SWG\\
         Imperial College London\\
         E-mail: \email{j.pritchard@imperial.ac.uk}}
         
@@ -63,6 +63,7 @@ Giardini Naxos, Italy}
 \newcommand{\sovast}{Sov. Astron.}
 \newcommand{\nar}{New Astron. Rev.}
 \newcommand{\apss}{Astrophys. \& Space. Sci.}
+\newcommand{\aapr}{A \& A Rev.}
 
 \newcommand{\ud}{{\rm d}}
 
@@ -174,14 +175,12 @@ We first illustrate the sensitivity of different iterations of SKA in Figure \re
 
 Figure \ref{fig:sensitivity} illustrates a few key points governing parameter constraints. Here we have eliminated modes whose wavelength exceeds the instrument bandwidth removing sensitivity to the largest physical scales (smallest $k$ modes). At $z=8$, SKA0 is directly comparable in sensitivity to the proposed HERA experiment \cite{2014ApJ...782...66P}, which is more centrally concentrated to compensate for its small number of stations. By $z=20$ the amplitude of the 21 cm signal is too small to be detected by SKA1 {\em if we assume $T_S\gg T_\gamma$}. Detection of the 21cm signal at $z\gtrsim20$ with SKA1 is dependent upon a strong 21cm absorption signal that boosts the amplitude of the 21cm power spectrum. Unfortunately, it seems likely that during the absorption regime the details and spatial variation of the spin temperature will matter and complicated getting at cosmology.
 
-{\bf concept of effective volume and how SKA compares to various galaxy surveys}
-
-The key parameters for determining cosmological parameters are the effective volume probed and the minimum wavenumber probed $k_{\rm min}$ where modes can still be assumed to be linear. SKA has a significant advantage over galaxy surveys as more modes are still in the linear regime at $z>6$. We set $k_{\rm min}=2{\rm Mpc^{-1}}$ {\bf justify or do better}
+The key parameters for determining cosmological parameters are the effective volume probed and the minimum wavenumber probed $k_{\rm min}$ where modes can still be assumed to be linear. SKA has a significant advantage over galaxy surveys as more modes are still in the linear regime at $z>6$. We set $k_{\rm min}=2{\rm Mpc^{-1}}$ at $z=8$ corresponding to the scale where $\sigma(2\pi/k)=0.5$.
 
 \begin{figure}[htbp]
 \begin{center}
 
-\caption{Effective volume and comparison of SKA to Euclid}
+\caption{Effective volume and comparison of SKA-LOW to Euclid}
 \label{fig:effectivevolume}
 \end{center}
 \end{figure}
@@ -199,7 +198,11 @@ Table \ref{tab:constraints} shows the cosmological parameters obtained with the 
 \hline
 Fiducial& 0.147 & 0.023 & 0.7 & -1 & 0.95 & 26.6 & 0.1 & 0.24 & 0.3  \\
 \hline
-SDSS& 0.456 & 0.083 & 0.117 & 1.21 & 0.503 & $\infty$ & \ldots & \ldots   \\
+Planck & - & - & - & - & - & - & - & - & -   \\
+HERA & - & - & - & - & - & - & - & - & -  \\
+SKA0 & - & - & - & - & - & - & - & - & -  \\
+SKA1 & - & - & - & - & - & - & - & - & -  \\
+SKA2 & - & - & - & - & - & - & - & - & -  \\
 \end{tabular}
 \end{center}
 \label{tab:constraints}
@@ -244,13 +247,114 @@ CDFs of T?/TS corresponding to the fiducial and extreme astrophysical X-ray heat
 \end{center}
 \end{figure}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Magnetic fields
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{21 cm signal from the PMFs}
+
+Primordial magnetic fields (PMFs) has been intensively investigated in
+the literature as possible seeds for large scale magnetic fields
+observed in galaxies and clusters of galaxies (for a recent review, see
+\cite{2013A&ARv..21...62D}).  Magnetic fields in galaxies in high
+redshifts \cite{2008Natur.454..302B} and in void regions
+\cite{2010Sci...328...73N,2010ApJ...722L..39A,2013ApJ...771L..42T} can
+well be the pieces of evidence that the seed fields are of primordial
+origin.  The primordial magnetic fields may be created in the very
+early universe, e.g., at the epoch of inflation, cosmological phase
+transition, and cosmological recombination.  
+The Planck collaboration
+recently places limits on the PMFs as $B_{\lambda=1{\rm Mpc}} < 3.4$ nG and $n_B<0$
+from the temperature anisotropies on large and small angular scales
+\cite{2013arXiv1303.5076P}. 
+
+The CMB brightness temperature fluctuations produced by the neutral
+hydrogen 21-cm line (21 cm) would offer a new probe of the primordial
+magnetic fields (PMFs) created in the early universe. For the 21 cm
+observation, aside from the early structure formation effect by the
+Lorentz force from the PMFs, one of the important effects is the
+dissipation process of the PMFs that increases the baryon
+temperature. The dissipation occurs mainly through the ambipolar
+diffusion due to the velocity difference between neutral hydrogen (which
+is the dominant component in the dark ages) and ionized particles (whose
+trajectory is bent by the Lorentz force).  The effect of the dissipation
+is rather significant. The gas temperature can reach $1000$ K or even
+$10^4$ K at $z=30$ if the magnetic fields have the strength of
+$B_\lambda \sim 3$ nG
+\cite{2005MNRAS.356..778S,2006MNRAS.372.1060T,2009ApJ...692..236S,2014JCAP...01..009K}.
+
+This dissipation will give rise to a unique signature of the PMFs on the
+21 cm observation. Because the spin temperature is closely coupled to
+the gas temperature at high redshift ($z>30$), the 21 cm signal would
+come as `emission' if the energy dissipation is efficient. In
+Fig.~\ref{fig:KI1} the global HI signal with several magnetic field
+strengths are shown. For cases with sufficient magnetic fields, say
+$B\gtrsim 0.03$ nG, the signal is always emission against CMB while in
+the standard $\Lambda$CDM model the signal would be absorption for the
+frequency range of $f_\nu \lesssim 80$ MHz (corresponding to the signal
+from redshift $z\gtrsim 20$).
+
+We show the angular power spectrum of the 21 cm brightness temperature
+including the PMFs in Fig.~\ref{fig:KI2}
+\cite{2014arXiv1403.2608S}. Here we do not account for any (standard)
+heating effects (i.e., UV, X, and L$\alpha$ background emissions) to isolate and
+clarify the effects from the PMFs.  On large scales which may be
+relevant to SKA 
+observations, there are two distinct contributions. One is from the
+standard (adiabatic) density fluctuations enhanced by the heating from
+the PMFs, and the other is from the PMF induced density fluctuations
+dominant on smaller scales
+\cite{2006MNRAS.372.1060T,2009ApJ...692..236S}. We can see from the
+figure that $B=1$ nG
+magnetic fields are marginally within reach for a statistical detection
+of the power spectrum. Stacking observing channels in principle will add
+more statistical power.
+
+The angular correlation function in real space including the effects
+from the PMFs is also studied in \cite{2009JCAP...11..021S}.  The
+function exhibits a distinct feature because the PMFs induce early
+structure formation and the small scale halos form more compared to the
+case in the standard $\Lambda$CDM model The signal from primordial
+magnetic fields shows oscillatory feature contrary to that in the
+standard $\Lambda$CDM since the matter power spectrum induced by the
+PMFs is blue and most of halos are formed at the scale close to the
+magnetic Jeans' length. It has been argued that $5$ sigma detection of
+the $0.5$ nG magnetic fields will be possible with less than one week
+integration of SKA observation \cite{2009JCAP...11..021S}.
+
+\begin{figure}[]
+\includegraphics[width=0.6\linewidth,angle=0]{figures/KI_fig1.eps}
+\caption{The global 21 cm signal with magnetic field strength $B=1$
+$0.1$, $0.03$, and $0.01$ nG (colored lines from top to bottom). The
+solid line corresponds to the model without primordial magnetic fields.
+Note that any other heating source than magnetic fields is neglected in
+the figure.}  \label{fig:KI1}
+\end{figure}
+
+\begin{figure}[]
+\includegraphics[width=0.6\linewidth,angle=0]{figures/KI_fig2.eps}
+\caption{Angular power spectra for PMF strengths: $B=0,~ 0.1,~ 1.0$ nG
+at $z=15$. The bottom curve shows the power spectrum from the standard
+density perturbations for fully neutral medium without any heating and
+reionization processes. The red and blue curves correspond to the cases
+with heating by the PMFs with $B=0.1$ nG and $B=1.0$ nG,
+respectively. The heating induces deviations of the spin temperature
+from the CMB temperature and the signal is enhanced. The noise curves
+for SKA1 and SKA2 are also shown as indicated. By courtesy of
+M. Shiraishi \& H. Tashiro.}  \label{fig:KI2}
+\end{figure}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Fundamental physics from modifications to the source population}
 
+Non-Gaussianity from bispectrum and power spectrum as a result of modification to source populations.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Bulk flows}
+
+BAO and consistency from signal during relative velocity flow epoch.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -312,10 +416,13 @@ Compared with the CMB our theoretical understanding of the 21cm signal during re
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Paths to cosmology with Phase 1 and Phase 2}
 
+Short section to comment on what Phase 2 gets you over Phase 1.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Miscellaneous?}
 
+Other ways of constraining cosmology unique to SKA: variation of fine structure, cosmic string wakes, etc
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
