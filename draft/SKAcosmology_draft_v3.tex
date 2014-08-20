@@ -107,7 +107,7 @@ Giardini Naxos, Italy}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 
-The years since the COBE observations of the CMB have ushered in an age of precision cosmology. Key cosmological parameters have been made possible by measurements of the distribution of matter in the Universe through WMAP and Planck observations of CMB anisotropies and large volume galaxy surveys such as SDSS. These surveys have made precision measurements of parameters describing the matter content of the Universe - the baryons $\Omega_b$, dark matter $\Omega_c$, dark energy $\Omega_\Lambda$, radiation $\Omega_r$, and neutrinos $\Omega_\nu$ - and the physics of inflation - via the tilt $n_s$, amplitude $A_s$, running $\ud n_s/\ud\log k$ or the primordial potential power spectrum and $r$ the ratio of tensor-to-scalar modes produced by inflation. These measurements have firmly established the basic picture of our Universe, known widely as the $\Lambda$CDM model of cosmology.
+The years since the COBE observations of the CMB have ushered in an age of precision cosmology. Key cosmological parameters have been determined by measurements of the distribution of matter in the Universe through WMAP and Planck observations of CMB anisotropies and large volume galaxy surveys such as SDSS. These surveys have made precision measurements of parameters describing the matter content of the Universe - the baryons $\Omega_b$, dark matter $\Omega_c$, dark energy $\Omega_\Lambda$, radiation $\Omega_r$, and neutrinos $\Omega_\nu$ - and the physics of inflation - via the tilt $n_s$, amplitude $A_s$, running $\ud n_s/\ud\log k$ or the primordial potential power spectrum and $r$ the ratio of tensor-to-scalar modes produced by inflation. These measurements have firmly established the basic picture of our Universe, known widely as the $\Lambda$CDM model of cosmology.
 
 Despite this progress, measuring these numbers is only the first step towards a deep understanding of the underlying physics. Our ignorance of the nature of the dark matter and the dark energy or how neutrinos acquire mass and what value that mass takes are just two questions that modern cosmology hopes to address. Over the next decade two paths will help shed light on this. The simplest is simply to measure these cosmological parameters ever more precisely and over a wider range of times and scales in the hope of gaining further insights. The exemplar of this is with dark energy, where attempts to measure the redshift evolution of the dark energy density, parameterised by an equation of state $w(z)$, might distinguish a true cosmological constant from more general dark energy or modified gravity. For others there are critical thresholds of precision required to distinguish physical scenarios - for example, measuring the sum of the neutrino masses $M_\nu\lesssim0.1$ would determine the neutrino mass hierarchy. Clearly more precision is a good thing, but it is not the only path forward.
 
@@ -118,7 +118,7 @@ The SKA is uniquely placed to probe cosmology as it is capable of mapping the Un
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[scale=0.6]{figures/volumecirc.png}
-\caption{Illustration of the volume probed by SKA}
+\caption{Illustration of the volume probed by SKA. 3D comoving volume mapped to a 2D circle. The volume probed by an all sky galaxy survey out to $z=0.3$ (red circle, $\sim$SDSS) and $z=2$ (blue circle, $\sim$SKA-MID) are marked as is the volume at the redshifts probed by SKA-LOW, $z=6-27$ (cyan annulus).}
 \label{fig:volume}
 \end{center}
 \end{figure}
@@ -169,7 +169,7 @@ where $\lambda_i=\{\bar{P}_{T_b}\}$ and $\lambda_i=\{
 P_{\mu^0},\,P_{\mu^2},\,P_{\mu^4}\}$.
 
 \begin{table}[htdp]
-\caption{Low-frequency radio telescopes and their parameters.  We specify the number of antennae $N_a$, total collecting area $A_{\rm tot}$, bandwidth $B$, and total integration time $t_{\rm int}$ for each instrument. These values are fixed at $z=??$ and extrapolated to other frequencies using $A_{\rm tot}=N_{\rm ant}N_{\rm dip}A_{\rm dip}$ with the number of antennae per station $N_{\rm dip}=289$ and $A_{\rm dip}=\min(\lambda^2/3,3.2\,{ \rm m^2})$.}
+\caption{Low-frequency radio telescopes and their parameters.  We specify the number of antennae $N_a$, total collecting area $A_{\rm tot}$, bandwidth $B$, and total integration time $t_{\rm int}$ for each instrument. These values are fixed at $\nu=110$MHz and extrapolated to other frequencies using $A_{\rm tot}=N_{\rm ant}N_{\rm dip}A_{\rm dip}$ with a physical station size of 35m and the number of antennae per station $N_{\rm dip}=289$ and $A_{\rm dip}=\min(\lambda^2/3,3.2\,{ \rm m^2})$.}
 \begin{center}
 \begin{tabular}{ccccccc}
 \hline
@@ -189,7 +189,7 @@ SKA2 & 850$\times$4 & 290$\times$4 & 8 & 1000 & 35 & 2\\
 \label{tab:telescopes}
 \end{table}%
 
-We first illustrate the sensitivity of different iterations of SKA in Figure \ref{fig:sensitivity}, where we take the parameters in Table \ref{tab:telescopes} for SKA0 - with 50\% of the SKA1 baseline collecting area, SKA1, and SKA2 - with x4 the collecting area of SKA1. For each of these we assume a filled core followed by $r^{-2}$ distribution out to a maximum radius $R_{\max}$. HERA is assumed to have a uniform antennae distribution. SKA1 has 911 stations total with 899 in the core and 650 stations within a radius of 1km accounting for ~75\% of the total number of stations and collecting area. We limit to the innermost 850 within 2km, as the outer stations add little to the sensitivity. Physical station size is 35m. Stations have 289 antennae with antennae area $A_e=\lambda^2/3$ giving $3.2m^2$ at 110MHz. At lower frequencies the array is densely packed and has constant collecting area, at higher frequencies the array becomes sparse.
+We first illustrate the sensitivity of different iterations of SKA in Figure \ref{fig:sensitivity}, where we take the parameters in Table \ref{tab:telescopes} for SKA0 - with 50\% of the SKA1 baseline collecting area, SKA1, and SKA2 - with x4 the collecting area of SKA1. For each of these we assume a filled core followed by $r^{-2}$ distribution out to a maximum radius $R_{\max}$. HERA is assumed to have a uniform antennae distribution. SKA1 has 911 stations total with 899 in the core and 650 stations within a radius of 1km accounting for ~75\% of the total number of stations and collecting area. We limit to the innermost 850 within 2km, as the outer stations add little to the sensitivity. At lower frequencies the array is densely packed and has constant collecting area, at higher frequencies the array becomes sparse.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -204,48 +204,37 @@ Figure \ref{fig:sensitivity} illustrates a few key points governing parameter co
 
 The key parameters for determining cosmological parameters are the effective volume probed and the minimum wavenumber probed $k_{\rm min}$ where modes can still be assumed to be linear. SKA has a significant advantage over galaxy surveys as more modes are still in the linear regime at $z>6$. We set $k_{\rm min}=2{\rm Mpc^{-1}}$ at $z=8$ corresponding to the scale where $\sigma(2\pi/k)=0.5$.
 
-\begin{figure}[htbp]
-\begin{center}
-
-\caption{Effective volume and comparison of SKA-LOW to Euclid}
-\label{fig:effectivevolume}
-\end{center}
-\end{figure}
-
-Comment on higher redshift giving other advantages, eg isocurvature, where effects become smaller deeper into matter dominated regime.
-
-Table \ref{tab:constraints} shows the cosmological parameters obtained with the listed experimental performances.
+Table \ref{tab:constraints} shows the cosmological parameters obtained with the listed experimental performances. The key take home message of this is that SKA-LOW has the raw sensitivity to add useful information on cosmological parameters to Planck. The largest gains are on parameters that require small scale information - the running of the primordial power spectrum and neutrino masses, for example. This also indicates that SKA-LOW will have the sensitivity to provide a useful consistency check on cosmological parameters from the high redshift regime long before dark energy becomes important.
 
 \begin{table*}[htdp]
 \caption{Fiducial parameter values and $1-\sigma$ experimental uncertainties for cosmological parameters.  Dashes indicate parameters not relevant for that experiment; $\infty$ indicates parameters that are relevant, but not constrained. }
 \begin{center}
-\begin{tabular}{c|cccccccc|c}
+%\begin{tabular}{c|cccccccc|c}
+\begin{tabular}{c|cccccc|c}
 \hline
-& $\Omega_mh^2$ & $\Omega_bh^2$ & $\Omega_\Lambda$ & $w$ & $n_s$ & $A^2_s$ & $\tau$ & $Y_{He}$  & $M_\nu$ \\
-\hline
-Fiducial& 0.147 & 0.023 & 0.7 & -1 & 0.95 & 26.6 & 0.1 & 0.24 & 0.3  \\
-\hline
-Planck & - & - & - & - & - & - & - & - & -   \\
-HERA & - & - & - & - & - & - & - & - & -  \\
-SKA0 & - & - & - & - & - & - & - & - & -  \\
-SKA1 & - & - & - & - & - & - & - & - & -  \\
-SKA2 & - & - & - & - & - & - & - & - & -  \\
+%& $\Omega_mh^2$ & $\Omega_bh^2$ & $\Omega_\Lambda$ & $w$ & $n_s$ & $A^2_s$ & $\tau$ & $Y_{He}$  & $M_\nu$ \\
+Parameter & $\log\Omega_mh^2$ & $\log\Omega_bh^2$ & $\Omega_\Lambda$ & $n_s$ & $\log A_s$ & $dn_s/d\log k$ & $\tau$ \\
+Value & -1.92 & -3.79 & 0.7 & 0.95 & -0.186 & 0 & 0.1 \\
+planck & 0.00767 & 0.0059 & 0.00899 & 0.00303 & 0.00888 & 0.00467 & 0.00426 \\
+hera & 0.00732 & 0.00568 & 0.00644 & 0.00291 & 0.00867 & 0.00408 & 0.00422 \\
+ska1 50 & 0.00732 & 0.00532 & 0.00829 & 0.00298 & 0.00836 & 0.0028 & 0.00412 \\
+ska1 & 0.00198 & 0.00425 & 0.00237 & 0.00193 & 0.00799 & 0.000827 & 0.00399 \\
+ska 400 & 0.00103 & 0.00425 & 0.00189 & 0.00185 & 0.00797 & 0.00073 & 0.00398 \\
 \end{tabular}
 \end{center}
 \label{tab:constraints}
 \end{table*}
 
-\subsection{Core cosmological parameters}
+We make no attempt here to model the effects of astrophysics on these constraints. Increasingly conservative assumptions can degrade these constraints arbitrarily far. Nonetheless it is clear that the attempt to extract cosmological information could be quite rewarding. 
 
-\subsection{Inflationary parameters}
-
-\subsection{Neutrino mass}
+Beyond the standard cosmological parameters there are exotic physics that can only be probed at high redshift, since its effect decreases with time. Compensated isocurvature modes are a one example, where the contribution of the isocurvature does not grow with time and so becomes negligible compared to the growing adiabatic mode at late times \citep{2009PhRvD..80f3535G}.
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Constraining new physics from heating}
+\label{sec:heating}
 
 The 21cm signal probes both the ionization and thermal state of the IGM.  Although we do not know the precise timing and evolution of the signal, empirical scaling relations based on local star-forming galaxies \cite[e.g.][]{2012MNRAS.419.2095M} suggest that the X-rays from early galaxies heat the IGM to temperatures above the CMB before the bulk of reionization \cite[e.g.][]{2006MNRAS.371..867F,2012ApJ...760....3M}.  This marks the transition of the 21cm signal from absorption to emission, with large-scale fluctuations in gas temperature likely driving the 21cm power to its largest amplitude \cite[e.g.][]{2007MNRAS.376.1680P,2010A&A...523A...4B}.  The epoch of IGM heating is a powerful probe of the high-energy processes in the early Universe, with could have both astrophysical and cosmological origins.  Both can tells us about the nature of dark matter (DM).
 
@@ -498,13 +487,17 @@ CMB probes multiple horizon volumes (~1deg). LSS today can't as horizon is too l
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions}
 
-Cosmology with SKA is interesting, but hard!
+SKA-LOW will provide the first window onto cosmological information from the epoch of reionization and cosmic dawn. This makes it unique among the diverse array of future cosmological experiments, which are limited to redshfits $z\lesssim3$. This new view of the Universe will test the standard cosmological model deep in the matter dominated regime, where, in principle, we believe we know the evolution of the Universe. Deviations from $\Lambda$CDM predictions would signal new physics. Cosmology with SKA-LOW has potential to be very interesting, but will also be hard.
 
-Better not to think in terms of cosmological parameters. That will mostly be done by the time SKA switches on.
+The large volume and number of linear modes of the density field accessible at high redshift will one day lead to revolution in precision cosmological constraints. SKA-LOW Phase 1 will take the first step in this direction, but will be limited by the relatively small sky areas it can survey; SKA2 will push significantly further. It remains to be seen how significantly astrophysics limits our ability to extract cosmology from the density field itself, but it is clear that the effort should be made. The real gain here is unlikely to be in refining how accurately we know $\Lambda$CDM parameters, but in testing the paradigm in a new regime.
 
-Exotic physics and new regime is the more interesting target.
+Much clearer is the ability of both SKA-Low Phase 1 and 2 to measure the thermal history of the Universe at redshifts $z=6-27$. As elucidated in Section \ref{sec:heating} the thermal history contains information about exotic physics - dark matter physics, primordial magnetic fields, and more. The spatial variation of such heating, different from that of galaxies, provides a clear signature of novel physics. SKA will be able to identify and characterise such signatures constraining new physics. 
 
-Need new ideas and more work to assess how realistic any of this is.
+Large volumes accesses super-horizon physics and with SKA it will be possible to search for relativistic corrections and primordial non-Gaussianity on $\gtrsim$ Gpc scales.
+
+Since the 21cm signal must pass through the intervening density field, weak lensing will allow SKA to map out the dark matter field. The key advantage here is that the 21cm signal is a diffuse background so that representative parts of the Universe at high redshift can be mapped, rather than extreme regions in the vicinity of galaxy clusters. 
+
+It is hopefully clear that SKA-LOW will have something to say on a wide range of cosmological topics. The context is quite different from traditional probes of cosmology, so that the subtleties of cosmology from 21cm observations are not fully understood. It seems unlikely that SKA-LOW will transform our understanding of cosmology, but cosmology with SKA-LOW will be very interesting.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
