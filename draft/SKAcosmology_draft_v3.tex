@@ -402,7 +402,7 @@ BAO and consistency from signal during relative velocity flow epoch.
 \section{Cosmic shear and the EoR}
 It is possible that the EoR signal could be used to measure weak gravitational lensing.
 In \cite{Zahn:2005ap} and \cite{Metcalf:2009}  it was shown that if the EoR is at redshift 
-$z \sim 8$ or later, a large radio telescope such as the SKA could measure the lensing convergence power spectrum.  However a very large $f_{\rm sky}$ and a very compact low frequency array was assumed by those authors.  Here the calculation is repeated with parameters that are more consistent with current SKA plans.  The current plans for a 25 square degree survey with SKA\_Low will preclude measuring cosmological parameters through their effects on the weak lensing power-spectrum because of large sample variance (this is not true of the SKA\_Mid at lower redshift where the survey area will be much larger).  It still might be possible to map the lensing convergence within the 25 square degree EoR survey area.  This would allow us to actually ``see'' the distribution of dark matter in a typical region of the sky, something that is only possible with galaxy lensing around very atypical, large galaxy clusters.  This would provide a great opportunity to correlate visible objects with mass and test the dark matter paradigm.
+$z \sim 8$ or later, a large radio telescope such as the SKA could measure the lensing convergence power spectrum.  However a very large $f_{\rm sky}$ and a very compact low frequency array was assumed by those authors.  Here the calculation is repeated with parameters that are more consistent with current SKA plans.  The current plans for a 25 square degree survey with SKA1-Low will preclude making competitive measurements of the cosmological parameters through their effects on the weak lensing power-spectrum because of sample variance (this is not true of the SKA1-Mid at lower redshift where the survey area will be much larger.)  It still might be possible to map the lensing convergence within the 25 square degree EoR survey area.  This would allow us to actually ``see'' the distribution of dark matter in a typical region of the sky, something that is only possible with galaxy lensing around very atypical, large galaxy clusters.  This would provide a great opportunity to correlate visible objects with mass and test the dark matter paradigm.
 
 The previously mentioned authors extended the
 Fourier-space quadratic estimator technique, which was first developed in 
@@ -411,11 +411,12 @@ observables, i.e. the $21$ cm intensity field $I(\theta,z)$.
 The  convergence
 estimator and the corresponding lensing reconstruction noise are
 calculated assuming that the temperature (brightness) distribution is
-Gaussian. This will not be strictly true during the EoR, but serves as a reasonable approximation for these purposes. Note that the lensing reconstruction noise contains the thermal noise of the telescope which is calculated using the formula
+Gaussian. This will not be strictly true during the EoR, but serves as a reasonable approximation for these purposes. Note that the lensing reconstruction noise contains the thermal noise of the telescope which -assuming a uniform telescope distribution- is calculated using the formula
+
 \begin{equation}
 C^{\rm N}_\ell = \frac{(2\pi)^3 T^2_{\rm sys}}{B t_{\rm obs} f^2_{\rm cover} \ell_{\rm max}(\nu)^2} \, ,
 \end{equation} where the system temperature $T_{\rm sys}$ at high redshifts
- is dominated by galactic synchrotron radiation, $B$ is the chosen frequency window, $t_{\rm obs}$ the total observation time, $D_{\rm tel}$ the diameter (maximum baseline) of the core array, $\ell_{\rm max}(\lambda)=2\pi D_{\rm tel}/\lambda$ is the highest multipole that can be measured by the array at frequency $\nu$ (wavelength $\lambda$), and $f_{\rm cover}$ is the total collecting area of the core array $A_{\rm coll}$ divided by $\pi(D_{\rm tel}/2)^2$. 
+ is dominated by galactic synchrotron radiation and can be approximated by $T_{\rm sys} = 60 \times (\nu/300 \, {\rm MHz})^{-2.55} \, {\rm K}$ \cite{Dewdney:2013}, $B$ is the chosen frequency window, $t_{\rm obs}$ the total observation time, $D_{\rm tel}$ the diameter (maximum baseline) of the core array, $\ell_{\rm max}(\lambda)=2\pi D_{\rm tel}/\lambda$ is the highest multipole that can be measured by the array at frequency $\nu$ (wavelength $\lambda$), and $f_{\rm cover}$ is the total collecting area of the core array $A_{\rm coll}$ divided by $\pi(D_{\rm tel}/2)^2$. 
  
  The advantage of 21cm lensing is that one is able to combine
 information from multiple redshift slices. In Fourier space, the
@@ -425,25 +426,25 @@ discretized version of the parallel wave vector $k_\parallel =
 \frac{2\pi}{{\cal L}}j$, where ${\cal L}$ is the depth of the observed
 volume. Considering modes with different $j$ independent, an optimal
 estimator can be found by combining the individual estimators for
-different $j$ modes without mixing them. The three-dimensional lensing reconstruction noise is then found to be  \cite{Zahn:2005ap}\begin{equation}
-N(L,\nu) =  \left[\sum_{j=1}^{j_{\rm max}} \frac{1}{L^4}\int \frac{d^2\ell}{(2\pi)^2}  \frac{[\mathbf{l} \cdot \mathbf{L} C_{\ell,j}+\mathbf{L} \cdot (\mathbf{L}-\mathbf{l})
+different $j$ modes without mixing them. The three-dimensional lensing reconstruction noise is then found to be  \citep{Zahn:2005ap}\begin{equation}
+N(L,\nu) =  \left[\sum_{j=1}^{j_{\rm max}} \frac{1}{L^2}\int \frac{d^2\ell}{(2\pi)^2}  \frac{[\mathbf{l} \cdot \mathbf{L} C_{\ell,j}+\mathbf{L} \cdot (\mathbf{L}-\mathbf{l})
 C_{|\ell-L|,j}]^2}{2 C^{\rm tot}_{\ell,j}C^{\rm tot}_{|\mathbf{l}-\mathbf{L}|,j}}\right]^{-1}.
 \end{equation}
-Here, $C^{\rm tot}_{\ell,j}=C_{\ell,j}+C^{\rm N}_\ell$, where $C_{\ell,j}=[\bar{T}(z)]^2P_{\ell,j}$ with $\bar{T}(z)$ the mean observed brightness temperature at redshift $z$ due to the average HI density and $P_{\ell,j}$ the underlying dark matter power spectrum  \cite{Zahn:2005ap}. 
-For SKA\_Low we can consider a $1,000~{\rm hr}$ observation time and we choose $B = 8 \, {\rm MHz}$ and $j_{\rm max}=40$, but with multiple bands $\nu$ that can be stacked to reduce the noise so that $N_L = 1/\displaystyle\sum_{\nu} [N(L,\nu)]^{-1}$. 
+Here, $C^{\rm tot}_{\ell,j}=C_{\ell,j}+C^{\rm N}_\ell$, where $C_{\ell,j}=[\bar{T}(z)]^2P_{\ell,j}$ with $\bar{T}(z)$ the mean observed brightness temperature at redshift $z$ due to the average HI density and $P_{\ell,j}$ the underlying dark matter power spectrum  \citep{Zahn:2005ap}. 
+For SKA1-Low we can consider a $1,000~{\rm hr}$ observation time and we choose $B = 8 \, {\rm MHz}$ and $j_{\rm max} \sim 40$, but with multiple bands $\nu$ that can be stacked to reduce the noise so that $N_L = 1/\displaystyle\sum_{\nu} [N(L,\nu)]^{-1}$. 
  
-At redshift $z_s \sim 8$, we can assume the SKA1 Baseline Design \cite{Dewdney:2013} parameters of $A_{\rm coll} \simeq 0.3  \, {\rm km}^2$ with maximum baseline $D_{\rm tel}=4 \, {\rm km}$, while for SKA2 we can consider $A_{\rm coll} \simeq 1.2  \, {\rm km}^2$.
+At redshift $z_s \sim 8$, we can assume the SKA1-Low Baseline Design \citep{Dewdney:2013} parameters of $A_{\rm coll} \simeq 0.3  \, {\rm km}^2$ with maximum baseline $D_{\rm tel}=4 \, {\rm km}$, while for SKA we can consider $A_{\rm coll} \simeq 1.2  \, {\rm km}^2$.
 The estimated lensing noise is shown in Figure~\ref{fig:CLNL} along with the estimated signal.  
-Here $C_L$ is the convergence field power spectrum at $z_s=8$ and $N_L$ the lensing reconstruction noise assuming a reionization fraction $f_{\rm HI}=1$.
+Here $C^{\kappa \kappa}_L$ is the convergence field power spectrum at $z_s=8$ and $N_L$ the lensing reconstruction noise assuming a reionization fraction $f_{\rm HI}=1$.
 \begin{figure}[h]
 \centerline{
 \includegraphics[scale=0.5]{figures/tomographic_SKA_kappaPS.pdf}
 }
-\caption{The lensing convergence field power spectrum, $C_L$, for sources at $z=8$ is shown as a solid black line and lensing reconstruction noise $N_L$ as dashed lines.  The blue dashed curve is for the SKA1 Baseline Design with 10 8~MHz frequency bins around $z=8$ spanning the redshift range $z \simeq 6.5-11$.  The red line is for SKA2 and the same frequency bins. The vertical line is approximately the lowest $L$ accessible with a 5-by-5 degree field.  Where the noise curves are below $C_L$, typical fluctuations in the lensing deflection should be recoverable in a map. }
+\caption{The lensing convergence field power spectrum, $C^{\kappa \kappa}_L$, for sources at $z=8$ is shown as a solid black line and lensing reconstruction noise $N_L$ as dashed lines.  The blue dashed line is for SKA1-Low with 10 8~MHz frequency bins around $z=8$ spanning the redshift range $z \simeq 6.5-11$.  The red dashed line is for SKA and the same frequency bins. The vertical line is approximately the lowest $L$ accessible with a 5-by-5 degree field.  Where the noise curves are below $C^{\kappa \kappa}_L$, typical fluctuations in the lensing deflection should be recoverable in a map. }
 \label{fig:CLNL}
 \end{figure}
 
-These results show that it might be possible to map the lensing signal over a range of angular scales.  This measurement greatly benefits from the larger collecting area that will come with Phase 2 of the SKA (we also note that  considering a more compact array, i.e. smaller $D_{\rm tel}$, also improves the signal-to-noise).  The weak lensing power spectrum can be better measured for redshifts after reionization using SKA\_Mid and the same 21 cm intensity mapping technique discussed, but over a much larger area of sky \cite{PourtsidouMetcalf:2014}.
+These results show that it might be possible to map the lensing signal over a range of angular scales.  This measurement greatly benefits from the larger collecting area that will come with Phase 2 of the SKA (we also note that  considering a more compact array, i.e. smaller $D_{\rm tel}$, also improves the signal-to-noise).  The weak lensing power spectrum can be better measured for redshifts after reionization using SKA-Mid and the same 21 cm intensity mapping technique discussed, but over a much larger area of sky \citep{PourtsidouMetcalf:2014}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
