@@ -138,6 +138,12 @@ In this section, we explore the ability of SKA to constrain cosmological paramet
 \end{equation}
 Equation \ref{deltatb} shows how these different terms come into play. In a regime where $T_S\gg T_{\rm CMB}$ and $x_H=1$ then $\delta T_B$ will be an unbiased tracer of the density field. At all other times the effects of astrophysics must be modelled and removed or somehow avoided. We will return to a discussion of this point in \S\ref{sec:separation} as this is a critical point.
 
+Peculiar velocities of the gas lead to redshift space distortions and an angular dependence of the power spectrum, which in the simplest linear theory models look like
+\begin{equation}
+P(k)=P_{\mu^0}(k)+P_{\mu^2}\mu^2+P_{\mu^4}\mu^4.
+\end{equation}
+In principle, measurement of this angular dependence of the power spectrum could separate cosmology and astrophysics since the $P_{\mu^4}=P_\delta$ so directly probes the density field. In practice, this separation is complicated by non-linear growth of structure and the motion of ionised regions themselves and it is unclear how effective it can be.
+
 In this section, we take the optimistic view that there will a regime in which $\delta T_b\propto(1+\delta)$ so that the 21cm signal provides a clean measurement of the density field. This approach enables us to evaluate the best case scenario for SKA in measuring cosmological parameters. By comparing this to galaxy surveys we get a sense of how competitive SKA could be, if astrophysics could be overcome.
 
 The sensitivity of a radio interferometer to the 21cm power spectrum has been well studied \cite[e.g.][]{bowman2006, 2006ApJ...653..815M,2008PhRvD..78b3529M} and we follow the same approach here. The variance of a 21 cm power spectrum estimate for a single
@@ -189,7 +195,7 @@ SKA2 & 850$\times$4 & 290$\times$4 & 8 & 1000 & 35 & 2\\
 \label{tab:telescopes}
 \end{table}%
 
-We first illustrate the sensitivity of different iterations of SKA in Figure \ref{fig:sensitivity}, where we take the parameters in Table \ref{tab:telescopes} for SKA0 - with 50\% of the SKA1 baseline collecting area, SKA1, and SKA2 - with x4 the collecting area of SKA1. For each of these we assume a filled core followed by $r^{-2}$ distribution out to a maximum radius $R_{\max}$. HERA is assumed to have a uniform antennae distribution. SKA1 has 911 stations total with 899 in the core and 650 stations within a radius of 1km accounting for ~75\% of the total number of stations and collecting area. We limit to the innermost 850 within 2km, as the outer stations add little to the sensitivity. At lower frequencies the array is densely packed and has constant collecting area, at higher frequencies the array becomes sparse.
+We first illustrate the sensitivity of different iterations of SKA in Figure \ref{fig:sensitivity}, where we take the parameters in Table \ref{tab:telescopes} for SKA0 - with 50\% of the SKA1 baseline collecting area, SKA1, and SKA2 - with x4 the collecting area of SKA1. For each of these we assume a filled core followed by $r^{-2}$ distribution out to a maximum radius $R_{\max}$. HERA is assumed to have a uniform antennae distribution. SKA1 has 911 stations total with 899 in the core and 650 stations within a radius of 1km accounting for ~75\% of the total number of stations and collecting area. We limit to the innermost 850 within 2km, as the outer stations add relatively little to the sensitivity. At lower frequencies the array is densely packed and has constant collecting area, at higher frequencies the array becomes sparse.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -207,25 +213,25 @@ The key parameters for determining cosmological parameters are the effective vol
 Table \ref{tab:constraints} shows the cosmological parameters obtained with the listed experimental performances. The key take home message of this is that SKA-LOW has the raw sensitivity to add useful information on cosmological parameters to Planck. The largest gains are on parameters that require small scale information, for example the running of the primordial power spectrum and related inflationary parameters \citep{2009PhLB..673..173B,2011JCAP...02..021A} and neutrino masses \citep{2008PhRvD..78f5009P}. This also indicates that SKA-LOW will have the sensitivity to provide a useful consistency check on cosmological parameters from the high redshift regime long before dark energy becomes important.
 
 \begin{table*}[htdp]
-\caption{Fiducial parameter values and $1-\sigma$ experimental uncertainties for cosmological parameters. Here we restrict to cosmological parameters, and do not show other parameters \{$\tau$, $x_H(z=7)$, $x_H(z=7.5)$, $x_H(z=8)$\} included in the analysis. }
+\caption{Fiducial parameter values and $1-\sigma$ constraints on cosmological parameters. Non-cosmological parameters included in the analysis \{$\tau$, $x_H(z=7)$, $x_H(z=7.5)$, $x_H(z=8)$\} are not shown. }
 \begin{center}
-%\begin{tabular}{c|cccccccc|c}
 \begin{tabular}{c|cccccccc}
 \hline
  & $\log\Omega_mh^2$ & $\log\Omega_bh^2$ & $\Omega_\Lambda$ & $n_s$ & $\log A_s$ & $\Omega_k$ & $dn_s/d\log k$ & $M_\nu$ (eV) \\
 Value & -1.9 & -3.8 & 0.7 & 0.95 & -0.19 & 0 & 0 & 0.3\\
 \hline
-planck & 0.028 & 0.0068 & 0.038 & 0.0035 & 0.0097 & 0.0022 & 0.0047 & 0.35 \\
-hera & 0.0091 & 0.0055 & 0.011 & 0.003 & 0.0088 & 0.0021 & 0.0036 & 0.12  \\
-ska0 & 0.017 & 0.0058 & 0.023 & 0.0032 & 0.009 & 0.0022 & 0.0034 & 0.22  \\
-ska1 & 0.0083 & 0.0051 & 0.01 & 0.003 & 0.0084 & 0.002 & 0.0018 & 0.12  \\
-ska2 & 0.0016 & 0.0048 & 0.0026 & 0.0027 & 0.0081 & 0.0012 & 0.00092 & 0.084  \\
+Planck & 0.028 & 0.0068 & 0.038 & 0.0035 & 0.0097 & 0.0022 & 0.0047 & 0.35 \\
+Hera & 0.0091 & 0.0055 & 0.011 & 0.003 & 0.0088 & 0.0021 & 0.0036 & 0.12  \\
+Ska0 & 0.017 & 0.0058 & 0.023 & 0.0032 & 0.009 & 0.0022 & 0.0034 & 0.22  \\
+Ska1 & 0.0083 & 0.0051 & 0.01 & 0.003 & 0.0084 & 0.002 & 0.0018 & 0.12  \\
+Ska2 & 0.0016 & 0.0048 & 0.0026 & 0.0027 & 0.0081 & 0.0012 & 0.00092 & 0.084 
 \end{tabular}
 \end{center}
 \label{tab:constraints}
 \end{table*}
 
-We make no attempt here to model the effects of astrophysics on these constraints. Increasingly conservative assumptions can degrade these constraints arbitrarily far. Nonetheless it is clear that the attempt to extract cosmological information could be quite rewarding. 
+We make no attempt here to model the effects of astrophysics on these constraints. Increasingly conservative assumptions can degrade these constraints arbitrarily far \citep{2008PhRvD..78b3529M}, so these should be viewed as optimistic lower bounds on the constraints that might be achieved. This indicates that the attempt to extract cosmology from EoR observations could be quite rewarding.  
+We will discuss how this might be achieved in the next section.
 
 Beyond the standard cosmological parameters there are exotic physics that can only be probed at high redshift, since its effect decreases with time. Compensated isocurvature modes are a one example, where the contribution of the isocurvature does not grow with time and so becomes negligible compared to the growing adiabatic mode at late times \citep{2009PhRvD..80f3535G}.
 
@@ -236,9 +242,7 @@ Beyond the standard cosmological parameters there are exotic physics that can on
 
 The key challenge for extracting fundamental physics from the 21cm signal will be separating the effects of cosmology from ``gastrophysics". A number of avenues have been studied in the literature, which broadly separate into (1) avoidance and (2) modelling. In the absence of a clearly defined window where $T_S\gg T_{\rm CMB}$ and $x_H=1$ it might still be possible to avoid astrophysics via the angular dependence of the power spectrum induced by redshift space distortions. Focussing on the $P_{\mu^4}\approx P_\delta$ part could lead to clean cosmological measurements. Obtaining precision cosmology this way is hard and the literature suggests little improvement over Planck is possible \citep{2006ApJ...653..815M,2008PhRvD..78b3529M}. Figure \ref{fig:musensitivity} shows predicted errors bars for SKA1 on the $P_{\mu^2}$ and $P_{\mu^4}$ parts of the power spectrum. A detection is possible with reasonable sensitivity at wavenumbers $k=0.1-1{\rm\,Mpc^{-1}}$.
 
-\begin{equation}
-P(k)=P_{\mu^0}(k)+P_{\mu^2}\mu^2+P_{\mu^4}\mu^4
-\end{equation}
+
 
 
 \begin{figure}[htbp]
